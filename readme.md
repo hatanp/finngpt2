@@ -1,0 +1,3 @@
+A collection of some scripts that I have used to pre-train a GPT-2 model for Finnish. The total parameter count is around 1.2B and the model should fir into 24GB of vram with batch size of 4 with this configuration. However, I found that I want to use a second GPU to run a display if I want to watch youtube for example so I wouldn't recommend using this identical configuration with an RTX 3090 on Windows. Also contains an example classification finetuning task.
+
+Contains some preprocessing, pre-training and a finetuning example. Preprocessing pre-trainign data in preprocess_* files. Tokenization with train_bpe_tokenizer_linux2_fix.py file. Pre_training is done with train.py. Files required for finetuning are *yle.py files. 
